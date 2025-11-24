@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # main.py
 # This file is the main program of the Password Manager
 
@@ -5,6 +6,11 @@ from generator import generate_password      # for generating new passwords
 from checker import check_strength           # for checking strength
 from storage import add_password , load_data  # for saving and viewing passwords
 
+=======
+from generator import generate_password
+from checker import check_strength
+from storage import add_password , load_data
+>>>>>>> 7e6fabde0f314c7eff15db8b65ae91c4298b318c
 
 def show_menu():
     print("\n=======================")
@@ -65,5 +71,9 @@ while True:
 
     # If user enters anything else
     else:
+<<<<<<< HEAD
         print("Invalid choice. Please try again.")
         
+=======
+        print("\nInvalid option. Try again.")
+>>>>>>> 7e6fabde0f314c7eff15db8b65ae91c4298b318c
