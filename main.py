@@ -1,6 +1,6 @@
 from generator import generate_password
 from checker import check_strength
-from history import add_password , load_data
+from storage import add_password , load_data
 
 def show_menu():
     print("\n===========================")
