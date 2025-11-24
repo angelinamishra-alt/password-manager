@@ -1,5 +1,6 @@
 from generator import generate_password
 from checker import check_strength
+import pyperclip
 
 def show_menu():
     print("\n====================")
@@ -22,6 +23,9 @@ while True:
         if length.isdigit():
             pw = generate_password(int(length))
             print("\n👉 Generated Password:", pw)
+
+            pyperclip.copy(pw)
+            print("(copied to clipboard)")
         else:
             print("Please enter a number (example: 12).")
 
